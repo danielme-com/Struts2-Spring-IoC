@@ -9,11 +9,11 @@
 
 	<name>Struts 2 - Spring IoC Integration</name>
 	<description>Struts 2 Spring Integration</description>
-	<url>http://danielme.com/tips-struts2/</url>
+	<url>http://danielme.com/2013/11/03/integrando-struts-2-y-spring-ioc</url>
 	<inceptionYear>2013</inceptionYear>
 
 	<scm>
-		<url>https://github.com/danielme-com/tip-Struts-2--03-JSON-result</url>
+		<url>https://github.com/danielme-com/Struts2-Spring-IoC</url>
 	</scm>
 
 	<licenses>
