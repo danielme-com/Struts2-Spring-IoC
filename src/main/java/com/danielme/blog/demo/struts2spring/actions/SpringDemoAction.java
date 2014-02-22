@@ -3,7 +3,6 @@ package com.danielme.blog.demo.struts2spring.actions;
 import java.text.SimpleDateFormat;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -15,8 +14,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @author danielme.com
  *
  */
-@Component
-@Qualifier(value="springDemoAction")
+@Component("springDemoAction")
 @Scope(value="session")
 public class SpringDemoAction extends ActionSupport
 {			
