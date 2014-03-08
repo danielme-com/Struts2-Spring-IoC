@@ -24,7 +24,14 @@
 	</licenses>
 
 	<properties>
-		<struts2.version>2.3.16</struts2.version>
+		
+		<java.version>1.6</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	
+		<struts2.version>2.3.16.1</struts2.version>
+		<spring.version>3.2.8.RELEASE</spring.version>
+		<slf4jlog4j.version>1.7.6</slf4jlog4j.version>
+		
 	</properties>
 
 
@@ -34,9 +41,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<encoding>UTF-8</encoding>
-					<source>1.6</source>
-					<target>1.6</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 				</configuration>
 			</plugin>
 
@@ -107,7 +114,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>3.2.8.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 
 		<dependency>
@@ -115,13 +122,13 @@
 			<artifactId>commons-logging</artifactId>
 			<version>1.1.3</version>
 		</dependency>
-
-
+		
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
-		</dependency>
+   		 	<groupId>org.slf4j</groupId>
+   		 	<artifactId>slf4j-log4j12</artifactId>
+   		 	<version>${slf4jlog4j.version}</version>
+   	   </dependency>
+
 
 	</dependencies>
 
