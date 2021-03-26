@@ -6,9 +6,11 @@
 	<constant name="struts.devMode" value="true" />
 	<constant name="struts.custom.i18n.resources" value="i18n" />
 	<!-- enable 'action' attribute -->
-	<constant name="struts.mapper.action.prefix.enabled" value="false" />
-	<!-- enable 'method'  attribute-->	
-	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.mapper.action.prefix.enabled"
+		value="false" />
+	<!-- enable 'method' attribute -->
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
 
 
 	<package name="default" namespace="/" extends="struts-default">
@@ -16,7 +18,7 @@
 		<action name="init" class="springDemoAction">
 			<result name="success">/jsp/result.jsp</result>
 		</action>
-		
+
 	</package>
 
 </struts>
