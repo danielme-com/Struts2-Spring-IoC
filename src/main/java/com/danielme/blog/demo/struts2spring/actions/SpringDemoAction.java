@@ -15,33 +15,28 @@ import com.opensymphony.xwork2.ActionSupport;
  *
  */
 @Component("springDemoAction")
-@Scope(value="session")
-public class SpringDemoAction extends ActionSupport
-{			
+@Scope(value = "session")
+public class SpringDemoAction extends ActionSupport {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Autowired
 	private SpringDemoService springDemoService;
-		
-	public String execute() 
-	{
-        return SUCCESS;
-    }
-	
-	public String getDate()
-	{
-		SimpleDateFormat sdf = new SimpleDateFormat(getText("pattern"));
-		return sdf.format(springDemoService.getDateNow());				
+
+	public String execute() {
+		return SUCCESS;
 	}
-	
-	public String getId()
-	{
+
+	public String getDate() {
+		SimpleDateFormat sdf = new SimpleDateFormat(getText("pattern"));
+		return sdf.format(springDemoService.getDateNow());
+	}
+
+	public String getId() {
 		return this.toString();
 	}
-	
+
 //	public void setSpringDemoService(SpringDemoService springDemoService) {
 //		this.springDemoService = springDemoService;
 //	}
-    
 
 }
